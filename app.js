@@ -6,6 +6,7 @@ const app = express();
 
 // Express Settings
 app.set("view engine", "ejs");
+app.disable("x-powered-by");
 
 // Static resource routing
 app.use(favicon(path.join(__dirname, "/public/favicon.ico")));
